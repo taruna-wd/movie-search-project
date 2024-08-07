@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>movie search app</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        
+        .card{
+            width: 30%;
+            margin: 1rem 0;
+        }
+
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body class="bg-black text-white">
+    <header>
+      <h2 class="text-center my-3 text-2xl font-bold tracking-tight text-white dark:text-white">Movie search App</h2>
+    </header>
+
+    <form class="max-w-lg mx-auto">
+      <div class="flex">
+       
+        <div class="relative w-full">
+          <input
+            type="search"
+            id="search-dropdown"
+            class="block p-2.5 w-full z-20 text-sm outline-none focus-none text-gray-900 bg-gray-50 rounded-e-lg border-s-gray-50 border-s-2 border border-gray-300   dark:bg-gray-700 dark:border-s-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:border-blue-500"
+            placeholder="Search movies ..."
+            required
+          />
+          <button
+            type="submit"
+            id="Search"
+            class="absolute top-0 end-0 p-2.5 text-sm font-medium h-full text-white bg-blue-700 rounded-e-lg border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+          >
+            Search
+          </button>
+        </div>
+      </div>
+    </form>
+
+    <section class="All-card flex flex-wrap justify-evenly">
+       
+
+    </section>
+    
+
+    <script src="script.js"></script>
+  </body>
+</html>
